@@ -1,0 +1,1904 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="concept.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient8648">
+      <stop
+         style="stop-color:#646464;stop-opacity:1"
+         offset="0"
+         id="stop8650" />
+      <stop
+         style="stop-color:#cbcbcb;stop-opacity:1"
+         offset="1"
+         id="stop8652" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8544"
+       inkscape:collect="always">
+      <stop
+         id="stop8546"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:0" />
+      <stop
+         id="stop8548"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0.39215687" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8538"
+       inkscape:collect="always">
+      <stop
+         id="stop8540"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:0" />
+      <stop
+         id="stop8542"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0.39215687" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8532"
+       inkscape:collect="always">
+      <stop
+         id="stop8534"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:0" />
+      <stop
+         id="stop8536"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0.39215687" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8520">
+      <stop
+         style="stop-color:#4e9a06;stop-opacity:1;"
+         offset="0"
+         id="stop8522" />
+      <stop
+         style="stop-color:#4e9a81;stop-opacity:1;"
+         offset="1"
+         id="stop8524" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8504">
+      <stop
+         style="stop-color:#f57900;stop-opacity:1;"
+         offset="0"
+         id="stop8506" />
+      <stop
+         style="stop-color:#f59000;stop-opacity:1;"
+         offset="1"
+         id="stop8508" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient8464">
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="0"
+         id="stop8466" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.39215687"
+         offset="1"
+         id="stop8468" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8440">
+      <stop
+         style="stop-color:#000000;stop-opacity:0"
+         offset="0"
+         id="stop8442" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0.39215687"
+         offset="1"
+         id="stop8444" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8419">
+      <stop
+         id="stop8421"
+         offset="0"
+         style="stop-color:#646464;stop-opacity:1" />
+      <stop
+         id="stop8423"
+         offset="1"
+         style="stop-color:#cbcbcb;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8402">
+      <stop
+         style="stop-color:#babdb6;stop-opacity:1;"
+         offset="0"
+         id="stop8404" />
+      <stop
+         style="stop-color:#d2ff97;stop-opacity:1;"
+         offset="1"
+         id="stop8406" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="NaN : NaN : 1"
+       inkscape:vp_y="NaN : NaN : 0"
+       inkscape:vp_z="NaN : NaN : 1"
+       inkscape:persp3d-origin="NaN : NaN : 1"
+       id="perspective10" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8402"
+       id="linearGradient8408"
+       x1="176.27267"
+       y1="506.47214"
+       x2="168.77267"
+       y2="494.29132"
+       gradientUnits="userSpaceOnUse" />
+    <inkscape:perspective
+       id="perspective8335"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8419-7"
+       id="linearGradient8417-1"
+       gradientUnits="userSpaceOnUse"
+       x1="176.27267"
+       y1="506.47214"
+       x2="168.77267"
+       y2="494.29132" />
+    <linearGradient
+       id="linearGradient8419-7">
+      <stop
+         id="stop8421-4"
+         offset="0"
+         style="stop-color:#b3b0f8;stop-opacity:1" />
+      <stop
+         id="stop8423-0"
+         offset="1"
+         style="stop-color:#d2ff97;stop-opacity:1;" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8440"
+       id="radialGradient8446"
+       cx="184.11565"
+       cy="449.99997"
+       fx="184.11565"
+       fy="449.99997"
+       r="15.84297"
+       gradientTransform="matrix(0.96843961,0.55912932,-0.85447431,1.4799917,390.32417,-318.9407)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8538"
+       id="radialGradient8454"
+       cx="214.80159"
+       cy="449.99997"
+       fx="214.80159"
+       fy="449.99997"
+       r="15.34297"
+       gradientTransform="matrix(0.8660253,-0.50000018,0.99999987,1.7320498,-421.22194,-222.02155)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8544"
+       id="radialGradient8462"
+       cx="199.4586"
+       cy="476.5748"
+       fx="199.4586"
+       fy="476.5748"
+       r="30.68594"
+       gradientTransform="matrix(1,0,0,0.57735025,0,201.42422)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8464"
+       id="radialGradient8470"
+       cx="199.4586"
+       cy="464.44745"
+       fx="199.4586"
+       fy="464.44745"
+       r="31.18594"
+       gradientTransform="matrix(1,2.5587163e-7,-1.4535908e-7,0.56809375,6.7511675e-5,195.0085)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8544"
+       id="radialGradient8478"
+       cx="176.44415"
+       cy="472.14566"
+       fx="176.44415"
+       fy="472.14566"
+       r="8.1714849"
+       gradientTransform="matrix(-0.93881327,0.54202653,-0.93881328,-1.6260651,785.34887,1144.2478)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8544"
+       id="radialGradient8486"
+       cx="222.47307"
+       cy="472.14566"
+       fx="222.47307"
+       fy="472.14566"
+       r="8.1714849"
+       gradientTransform="matrix(0.86602608,0.49999882,-0.93881077,1.6260731,473.06102,-406.83393)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8544"
+       id="radialGradient8494"
+       cx="207.1301"
+       cy="472.14566"
+       fx="207.1301"
+       fy="472.14566"
+       r="8.1714849"
+       gradientTransform="matrix(0.86602576,-0.49999939,0.93881219,1.6260731,-415.506,-192.03274)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8544"
+       id="radialGradient8502"
+       cx="191.78712"
+       cy="472.14566"
+       fx="191.78712"
+       fy="472.14566"
+       r="8.1714849"
+       gradientTransform="matrix(0.86602597,0.49999902,-0.93881127,1.6260731,468.95016,-391.49103)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8504"
+       id="radialGradient8510"
+       cx="191.78712"
+       cy="473.9173"
+       fx="191.78712"
+       fy="473.9173"
+       r="4.60289"
+       gradientTransform="matrix(1,0,0,2.1169526,0,-529.34317)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8504"
+       id="radialGradient8518"
+       cx="207.1301"
+       cy="438.48422"
+       fx="207.1301"
+       fy="438.48422"
+       r="4.60289"
+       gradientTransform="matrix(1,0,0,2.1169526,0,-489.7661)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8520"
+       id="radialGradient8526"
+       cx="222.47306"
+       cy="456.20077"
+       fx="222.47306"
+       fy="456.20077"
+       r="5.10289"
+       gradientTransform="matrix(1,0,0,2.0075095,0,-459.6266)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient8532"
+       id="radialGradient8530"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(-1.8776272,1.0840464,-1.8776201,-3.2521411,1334.4301,1825.0785)"
+       cx="168.27267"
+       cy="472.14566"
+       fx="168.27267"
+       fy="472.14566"
+       r="8.1714849" />
+    <inkscape:perspective
+       id="perspective8730"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7570"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7592"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7614"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7636"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7689"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7711"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7733"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective7863"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="362.34219"
+     inkscape:cy="432.05351"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     inkscape:window-width="1600"
+     inkscape:window-height="844"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:window-maximized="1"
+     inkscape:object-nodes="true"
+     inkscape:snap-grids="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7378"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       spacingx="10px"
+       spacingy="10px" />
+    <inkscape:grid
+       type="axonomgrid"
+       id="grid8286"
+       units="mm"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <g
+       id="g8180"
+       transform="translate(50,0)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect7380"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect7384"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(100,0)"
+       id="g8184">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8186"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <path
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 57.079832,357.51346 35.840336,0 c 2.176429,0 3.928572,1.75214 3.928572,3.92857 l 0,83.84034 c 0,2.17642 -1.752143,3.92857 -3.928572,3.92857 l -35.840336,0 c -2.176429,0 -3.928572,-1.75215 -3.928572,-3.92857 l 0,-83.84034 c 0,-2.17643 1.752143,-3.92857 3.928572,-3.92857 z"
+         id="rect8188"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+    <g
+       id="g8190"
+       transform="translate(150,0)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8192"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#ad7fa8;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8194"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(200,0)"
+       id="g8196">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8198"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8200"
+         style="fill:#ef2929;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       transform="translate(50,50)"
+       id="g8202">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8204"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8206"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       id="g8208"
+       transform="translate(100,50)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8210"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#ef2929;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8212"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(150,50)"
+       id="g8214">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8216"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8218"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       id="g8220"
+       transform="translate(200,50)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8222"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8224"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(50,100)"
+       id="g8226">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8228"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8230"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       id="g8232"
+       transform="translate(100,100)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8234"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#ef2929;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8236"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(150,100)"
+       id="g8238">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8240"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8242"
+         style="fill:#2e3436;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       id="g8244"
+       transform="translate(200,100)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8246"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8248"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       id="g8250"
+       transform="translate(50,150)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8252"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <rect
+         ry="3.9285715"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="rect8254"
+         width="43.697479"
+         height="43.697479"
+         x="53.15126"
+         y="405.51346" />
+    </g>
+    <g
+       transform="translate(100,150)"
+       id="g8256">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8258"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8260"
+         style="fill:#2e3436;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <g
+       id="g8262"
+       transform="translate(150,150)">
+      <rect
+         y="402.36218"
+         x="50"
+         height="50"
+         width="50"
+         id="rect8264"
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none" />
+      <path
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 57.079832,405.51346 35.840336,0 c 2.176429,0 3.928572,1.75214 3.928572,3.92857 l 0,83.84034 c 0,2.17642 -1.752143,3.92857 -3.928572,3.92857 l -35.840336,0 c -2.176429,0 -3.928572,-1.75215 -3.928572,-3.92857 l 0,-83.84034 c 0,-2.17643 1.752143,-3.92857 3.928572,-3.92857 z"
+         id="rect8266"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
+    <g
+       transform="translate(200,150)"
+       id="g8268">
+      <rect
+         style="fill:#eeeeec;fill-rule:evenodd;stroke:none"
+         id="rect8270"
+         width="50"
+         height="50"
+         x="50"
+         y="402.36218" />
+      <rect
+         y="405.51346"
+         x="53.15126"
+         height="43.697479"
+         width="43.697479"
+         id="rect8272"
+         style="fill:#ad7fa8;fill-rule:evenodd;stroke:#2e3436;stroke-width:0.87394959px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         ry="3.9285715" />
+    </g>
+    <path
+       style="fill:#2e3436;stroke:none"
+       d="m 182.31873,420.40801 c -3.84776,-3.84776 -10.08622,-3.84776 -13.93398,0 -3.84776,3.84776 -3.84776,10.08622 0,13.93398 3.84776,3.84776 10.08622,3.84776 13.93398,0 0.0982,-0.0982 0.18259,-0.20358 0.27578,-0.30481 l 0.0145,0.0145 6.6767,-6.6767 -6.66218,-6.66218 -0.0145,0.0145 c -0.0976,-0.10644 -0.1872,-0.21623 -0.29029,-0.31933 z"
+       id="path8276" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer"
+     style="display:inline">
+    <rect
+       style="fill:#ffffff;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+       id="rect8269"
+       width="322.20236"
+       height="177.16534"
+       x="153.4297"
+       y="405.70865"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot8326"
+       style="font-size:4px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:'04b03';-inkscape-font-specification:'04b03'"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996"
+       transform="translate(0,4)"><flowRegion
+         id="flowRegion8328"><rect
+           id="rect8330"
+           width="203.18875"
+           height="166.76183"
+           x="245.35715"
+           y="415.04074"
+           style="font-size:4px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:'04b03';-inkscape-font-specification:'04b03'" /></flowRegion><flowPara
+         id="flowPara8332">The objective is to reach the Green door.</flowPara><flowPara
+         id="flowPara8336" /><flowPara
+         id="flowPara8340">Player can't jump or fall off ledges.</flowPara><flowPara
+         id="flowPara8342" /><flowPara
+         id="flowPara8344">Player can move tile-by-tile, but with orientation: Forward and backward, strafe left and right, and turn left or right.</flowPara><flowPara
+         id="flowPara8374" /><flowPara
+         id="flowPara8376">Walls are impassable, but no block is solid.</flowPara><flowPara
+         id="flowPara8346" /><flowPara
+         id="flowPara8350">Doors of the same color are linked...BUT!</flowPara><flowPara
+         id="flowPara8354" /><flowPara
+         id="flowPara8356">Simply walking forward through a door will put you on the other side (if there is an other side.) It won't teleport you any other door (with a catch.)</flowPara><flowPara
+         id="flowPara8358" /><flowPara
+         id="flowPara8360">To go to another door, you will have to face the direction the target door is facing and walk into a door of the same color by moving in any direction BUT forward.</flowPara><flowPara
+         id="flowPara8362" /><flowPara
+         id="flowPara8364">In this case: Player should face South and strafe right to enter the Orange door on the bottom to exit the Orange door on top (still facing South, (don't ask how strafing right gives him forward momentum.) Then it's just a matter of exiting through the Green door towards the next level.</flowPara><flowPara
+         id="flowPara8366" /><flowPara
+         id="flowPara8368">This is the gist of it. Now imagine locked doors (on one or both sides,) togglable doors of openness and color, and doors that are not vertical or rotated through any of the horizontal axes! Hurray, puzzles.</flowPara><flowPara
+         id="flowPara8370" /><flowPara
+         id="flowPara8372">And yeah, the objective is to escape these rooms, therefor we have an Escape Room game.</flowPara><flowPara
+         id="flowPara8378" /><flowPara
+         id="flowPara8380">Not very original, but still doable...if I can decide how to build it. 3D seemed like a good choice at first, but I have no experience with it and Blender GE is quite awkward...but I'm willing to try if nothing else works.</flowPara></flowRoot>    <g
+       id="g8306"
+       style="stroke-width:0.5"
+       transform="translate(-3.7187023e-6,1.7624279e-7)">
+      <path
+         style="fill:#888a85;fill-opacity:0.78431373;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         d="m 199.46875,423.4375 -30.6875,17.71875 0,35.40625 30.6875,17.71875 30.6875,-17.71875 0,-35.40625 -30.6875,-17.71875 z"
+         id="path8700" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         id="path8288"
+         d="m 199.45861,423.42517 0,35.43308 -30.68594,17.71653 0,-35.43307 30.68594,-17.71654"
+         style="fill:#969894;fill-opacity:0.78431373;stroke:none" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         sodipodi:nodetypes="ccccc"
+         style="fill:#323331;fill-opacity:0.78431373;stroke:none"
+         d="m 199.45861,423.42517 0,35.43308 30.68594,17.71653 0,-35.43307 -30.68594,-17.71654"
+         id="path8290" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         id="path8292"
+         d="m 168.77267,476.57478 30.68594,-17.71653 30.68594,17.71653 -30.68594,17.71654 -30.68594,-17.71654"
+         style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         sodipodi:nodetypes="ccccc"
+         style="fill:#969894;fill-opacity:0.78431373;stroke:none"
+         d="m 230.14455,458.85824 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+         id="path8294" />
+      <path
+         style="fill:#969894;fill-opacity:0.78431373;stroke:none"
+         d="m 199.46875,458.84375 -15.34375,8.875 0,17.71875 3.0625,-1.78125 0,-14.15625 9.1875,-5.3125 0,14.15625 3.09375,-1.78125 0,-17.71875 z"
+         id="path8296" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         sodipodi:nodetypes="ccccccc"
+         style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none"
+         d="m 168.77267,458.85824 30.68594,-17.71653 30.68594,17.71653 -15.34297,8.85827 -15.34297,-8.85826 -15.34297,8.85826 -15.34297,-8.85827"
+         id="path8298" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         sodipodi:nodetypes="ccccc"
+         style="fill:#323331;fill-opacity:0.78431373;stroke:none"
+         d="m 199.45861,458.85824 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+         id="path8300" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         id="path8302"
+         d="m 168.77267,458.85824 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+         style="fill:#323331;fill-opacity:0.78431373;stroke:none"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         id="path8308"
+         d="m 227.07595,460.6299 0,-14.17323 -9.20578,5.31497 0,14.17323"
+         style="fill:#4e9a06;fill-opacity:0.78431373;stroke:none"
+         sodipodi:nodetypes="cccc" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         sodipodi:nodetypes="cccc"
+         style="fill:#ff2800;fill-opacity:0.77906979;stroke:none"
+         d="m 196.39001,478.34643 0,-14.17323 -9.20578,5.31497 0,14.17323"
+         id="path8310" />
+      <path
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         id="path8312"
+         d="m 202.5272,442.91335 0,-14.17323 9.20578,5.31497 0,14.17323"
+         style="fill:#ff2800;fill-opacity:0.77906979;stroke:none"
+         sodipodi:nodetypes="cccc" />
+      <g
+         id="g8694"
+         transform="translate(-60,0)">
+        <path
+           style="fill:#4e9a06;fill-opacity:0.78431373;stroke:none"
+           d="m 217.87017,458.85825 1.5343,2.65748 -4.60289,-0.88583 3.06859,-1.77165 z"
+           id="path8425"
+           sodipodi:nodetypes="cccc"
+           inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+           inkscape:export-xdpi="279.39996"
+           inkscape:export-ydpi="279.39996" />
+        <path
+           style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+           d="m 187.18423,480.11809 -1.5343,-2.65749 4.60289,0.88583 -3.06859,1.77166 z"
+           id="path8324"
+           sodipodi:nodetypes="cccc"
+           inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+           inkscape:export-xdpi="279.39996"
+           inkscape:export-ydpi="279.39996" />
+        <path
+           style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+           d="m 202.5272,446.45667 -1.5343,2.65748 4.60289,-0.88583 -3.06859,-1.77165 z"
+           id="path8318"
+           sodipodi:nodetypes="cccc"
+           inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+           inkscape:export-xdpi="279.39996"
+           inkscape:export-ydpi="279.39996" />
+        <path
+           sodipodi:nodetypes="cccc"
+           id="path8322"
+           d="m 196.39001,481.88975 1.5343,2.65748 -4.60289,-0.88583 3.06859,-1.77165 z"
+           style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+           inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+           inkscape:export-xdpi="279.39996"
+           inkscape:export-ydpi="279.39996" />
+      </g>
+      <g
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         style="stroke:#2e3436;stroke-width:5.01953363"
+         inkscape:export-ydpi="279.39996"
+         inkscape:export-xdpi="279.39996"
+         transform="matrix(0.09961085,0,0,0.09961085,179.59037,423.80848)"
+         id="g8410">
+        <path
+           style="fill:#646464;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+           d="m 196.375,471.25 -3.03125,1.78125 -0.0312,0 0,3.53125 3.0625,1.78125 0.0312,7.09375 3.0625,1.78125 3.03125,-1.78125 0,-10.625 -6.125,-3.5625 z"
+           transform="matrix(10.039067,0,0,10.039067,-1802.9198,-4254.6417)"
+           id="path8654" />
+        <path
+           id="path8396"
+           d="m 230.14455,512.00785 -5e-5,106.71455 -30.68594,17.71653 5e-5,-106.71454 30.68594,-17.71654"
+           style="fill:#969894;fill-opacity:0.78431373;stroke:none"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none"
+           d="m 137.9668,494.08372 30.68594,-17.71653 61.49181,35.64066 -30.68594,17.71654 -61.49181,-35.64067"
+           id="path8398"
+           sodipodi:nodetypes="ccccc" />
+        <path
+           style="fill:#323331;fill-opacity:0.78431373;stroke:none"
+           d="m 168.77262,512.00789 -30.9257,-17.85495 0,35.57149 30.80582,17.78575 0.11988,71.21222 30.68594,17.71653 0,-106.7145 -30.68594,-17.71654"
+           id="path8400"
+           sodipodi:nodetypes="cccccccc" />
+        <path
+           id="path8679"
+           style="fill:none;stroke:#e7e7e7;stroke-width:2.50976682;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.64534882"
+           d="m 199.45855,529.72445 29.53816,-16.99346 m -89.96142,-17.78581 60.42326,34.77927 0,105.2884"
+           sodipodi:nodetypes="ccccc" />
+      </g>
+      <path
+         sodipodi:nodetypes="ccccc"
+         style="fill:#969894;fill-opacity:0.78431373;stroke:none"
+         d="m 159.45861,458.85824 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+         id="path8711"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-ydpi="279.39996" />
+      <path
+         id="path8713"
+         d="m 156.39001,478.34643 0,-14.17323 -9.20578,5.31497 0,14.17323"
+         style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+         sodipodi:nodetypes="cccc"
+         inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+         inkscape:export-xdpi="279.39996"
+         inkscape:export-ydpi="279.39996" />
+    </g>
+    <g
+       id="g8263"
+       transform="matrix(0.49999951,0,0,0.49999951,99.729402,247.02198)"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996"
+       style="stroke-width:1.00000098">
+      <path
+         id="path7487"
+         d="m 184.11564,520.86611 30.68594,-17.71653 0,3.54331 -6.13719,-3.54331 6.13719,0"
+         style="fill:#000000;stroke:#000000;stroke-width:1.00000098;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccc"
+         style="fill:#000000;stroke:#000000;stroke-width:1.00000098;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         d="m 214.80158,520.86611 -30.68594,-17.71653 0,0"
+         id="path8261" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 208.66439,496.06297 3.06859,-1.77165 0,3.5433 3.0686,-1.77165"
+       id="path8267"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 138.08673,512.00785 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path8300-1" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 184.11564,520.86612 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path8294-4" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 138.08673,565.15746 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path8298-0" />
+    <path
+       id="path7569"
+       d="m 199.45861,653.74013 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7571"
+       d="m 214.80158,627.16533 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7573"
+       d="m 214.80158,627.16533 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 214.80158,609.44879 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7575" />
+    <path
+       id="path7577"
+       d="m 230.14455,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7579"
+       d="m 230.14455,636.0236 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 214.80158,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7581" />
+    <path
+       id="path7583"
+       d="m 199.45861,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 199.45861,636.0236 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7585" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 184.11564,662.5984 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7587" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 214.80158,662.5984 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7589" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 199.45861,671.45667 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7591" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 199.45861,636.0236 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7593" />
+    <path
+       id="path7595"
+       d="m 230.14455,636.0236 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7597"
+       d="m 199.45861,636.0236 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7599"
+       d="m 184.11564,644.88186 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7601"
+       d="m 214.80158,644.88186 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7603"
+       d="m 199.45861,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 230.14455,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7605" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 214.80158,627.16533 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7607" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 214.80158,644.88186 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7609" />
+    <path
+       id="path7611"
+       d="m 214.80158,627.16533 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7613"
+       d="m 214.80158,644.88187 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 199.45861,653.74013 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7615" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 184.11564,627.16533 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7619" />
+    <path
+       id="path7621"
+       d="m 199.45861,636.0236 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 199.45861,653.74013 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7623" />
+    <path
+       id="path7625"
+       d="m 184.11564,644.88187 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 230.14455,636.0236 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7627" />
+    <path
+       id="path7629"
+       d="m 245.48752,627.16533 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 245.48752,644.88186 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7631" />
+    <path
+       id="path7633"
+       d="m 230.14455,653.74013 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 199.45861,618.30705 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7635" />
+    <path
+       id="path7637"
+       d="m 184.11564,627.16533 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 199.45861,636.0236 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7639" />
+    <path
+       id="path7641"
+       d="m 214.80158,627.16533 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 306.8594,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7651" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 306.85939,609.44879 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7659" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 291.51643,636.0236 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7667" />
+    <path
+       id="path7747"
+       d="m 306.8594,591.73226 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 291.51643,600.59052 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7749" />
+    <path
+       id="path7751"
+       d="m 291.51643,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7753"
+       d="m 383.57424,600.59053 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 322.20236,600.59052 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7755" />
+    <path
+       id="path7757"
+       d="m 322.20236,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7759"
+       d="m 306.85939,644.88187 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 276.17346,644.88187 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7761" />
+    <path
+       id="path7763"
+       d="m 291.51643,653.74014 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7765"
+       d="m 322.20237,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7767"
+       d="m 291.51643,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       d="m 291.51643,618.30706 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7769" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 306.8594,627.16533 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7771" />
+    <path
+       id="path7773"
+       d="m 383.57424,600.59052 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7777"
+       d="m 306.85939,627.16533 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 291.51643,600.59052 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7779" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,627.16533 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7781" />
+    <path
+       id="path7783"
+       d="m 260.83049,653.74014 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969759;stroke:none;display:inline"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373;stroke:none;display:inline"
+       d="m 306.8594,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7785" />
+    <path
+       id="path7787"
+       d="m 368.23127,609.44879 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 398.91721,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7789" />
+    <path
+       id="path7791"
+       d="m 368.23127,609.44879 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7793"
+       d="m 383.57424,582.87399 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7795" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 383.57424,582.87399 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7797" />
+    <path
+       id="path7799"
+       d="m 398.91721,609.44879 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       d="m 352.8883,636.0236 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7801" />
+    <path
+       id="path7803"
+       d="m 383.57424,636.0236 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7805"
+       d="m 398.91721,591.73226 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,591.73226 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7807" />
+    <path
+       id="path7809"
+       d="m 368.23127,644.88187 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 398.91721,591.73226 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7811" />
+    <path
+       id="path7813"
+       d="m 383.57424,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path7815"
+       d="m 368.23127,591.73226 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 383.57424,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7817" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       d="m 352.8883,618.30706 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7819" />
+    <path
+       id="path7821"
+       d="m 383.57424,618.30706 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 383.57424,600.59053 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7823" />
+    <path
+       id="path7825"
+       d="m 383.57424,600.59052 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       id="path8308-17"
+       d="m 380.50565,637.79525 0,-14.17323 -9.20578,5.31497 0,14.17323"
+       style="fill:#4e9a06;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="cccc" />
+    <path
+       id="path7827"
+       d="m 368.23127,627.16533 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 414.26018,600.59052 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7829" />
+    <path
+       id="path7831"
+       d="m 414.26018,618.30706 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 398.91721,627.16533 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path7833" />
+    <path
+       id="path7835"
+       d="m 398.91721,609.44879 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:#969894;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 352.8883,600.59053 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7837" />
+    <path
+       id="path7839"
+       d="m 352.8883,618.30706 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,609.44879 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path7841" />
+    <path
+       id="path7843"
+       d="m 368.23127,627.16533 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:#323331;fill-opacity:0.78431373000000004;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,591.73226 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7847" />
+    <path
+       id="path7849"
+       d="m 352.8883,600.59053 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       sodipodi:nodetypes="ccccc"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       d="m 368.23127,609.4488 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       id="path7851" />
+    <path
+       id="path7853"
+       d="m 383.57424,600.59053 15.34297,-8.85827 15.34297,8.85828 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:#dedfdd;fill-opacity:0.80969758999999986;stroke:none;display:inline;opacity:0.75"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer#1"
+     style="display:none">
+    <rect
+       style="fill:#808080;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round"
+       id="rect8438"
+       width="153.4297"
+       height="159.44882"
+       x="122.74376"
+       y="379.13385" />
+    <path
+       style="fill:url(#radialGradient8446);fill-opacity:1;stroke:none"
+       d="m 199.45861,423.42517 0,35.43308 -30.68594,17.71653 0,-35.43307 30.68594,-17.71654"
+       id="path8288-4"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path8290-8"
+       d="m 199.45861,423.42517 0,35.43308 30.68594,17.71653 0,-35.43307 -30.68594,-17.71654"
+       style="fill:url(#radialGradient8454);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:url(#radialGradient8462);fill-opacity:1;stroke:none"
+       d="m 168.77267,476.57478 30.68594,-17.71653 30.68594,17.71653 -30.68594,17.71654 -30.68594,-17.71654"
+       id="path8292-8"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path8294-2"
+       d="m 230.14455,458.85824 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       style="fill:url(#radialGradient8486);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:url(#radialGradient8502);fill-opacity:1;stroke:none"
+       d="m 199.45861,458.85824 0,17.71654 -15.34297,8.85827 0,-17.71654 15.34297,-8.85827"
+       id="path8296-4"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path8298-5"
+       d="m 168.77267,458.85824 30.68594,-17.71653 30.68594,17.71653 -15.34297,8.85827 -15.34297,-8.85826 -15.34297,8.85826 -15.34297,-8.85827"
+       style="fill:url(#radialGradient8470);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path8300-5"
+       d="m 199.45861,458.85824 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       style="fill:url(#radialGradient8494);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:url(#radialGradient8478);fill-opacity:1;stroke:none"
+       d="m 168.77267,458.85824 0,17.71654 15.34297,8.85827 0,-17.71654 -15.34297,-8.85827"
+       id="path8302-1"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       style="fill:#4e9a06;fill-opacity:0.78431373;stroke:none"
+       d="m 217.87017,458.85825 1.5343,2.65748 -4.60289,-0.88583 3.06859,-1.77165 z"
+       id="path8425-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="opacity:0.75;fill:url(#radialGradient8526);fill-opacity:1;stroke:none"
+       d="m 227.07595,446.45667 0,14.17323 -9.20578,5.31497 0,-14.17323 9.20578,-5.31497"
+       id="path8308-1"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+       d="m 187.18423,480.11809 -1.5343,-2.65749 4.60289,0.88583 -3.06859,1.77166 z"
+       id="path8324-1"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       id="path8310-5"
+       d="m 196.39001,464.1732 0,14.17323 -9.20578,5.31497 0,-14.17323 9.20578,-5.31497"
+       style="opacity:0.75;fill:url(#radialGradient8510);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="opacity:0.75;fill:url(#radialGradient8518);fill-opacity:1;stroke:none"
+       d="m 202.5272,428.74012 0,14.17323 9.20578,5.31497 0,-14.17323 -9.20578,-5.31497"
+       id="path8312-2"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+       d="m 202.5272,446.45667 -1.5343,2.65748 4.60289,-0.88583 -3.06859,-1.77165 z"
+       id="path8318-7"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path8322-6"
+       d="m 196.39001,481.88975 1.5343,2.65748 -4.60289,-0.88583 3.06859,-1.77165 z"
+       style="fill:#f57900;fill-opacity:0.78431373;stroke:none"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996" />
+    <g
+       id="g8410-1"
+       transform="matrix(0.09961085,0,0,0.09961085,179.59037,423.80848)"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-ydpi="279.39996"
+       style="stroke:#2e3436"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png">
+      <path
+         style="fill:#b3b0f8;fill-opacity:1;stroke:#2e3436;stroke-width:5.01953363;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1"
+         d="m 230.14455,512.00785 0,35.43308 -30.68594,17.71653 0,-35.43307 30.68594,-17.71654"
+         id="path8396-4" />
+      <path
+         sodipodi:nodetypes="cccccc"
+         id="path8398-2"
+         d="m 168.77267,512.00785 0,-17.71653 30.68594,0 30.68594,17.71653 -30.68594,17.71654 -30.68594,-17.71654"
+         style="fill:url(#linearGradient8417-1);fill-opacity:1;stroke:#2e3436;stroke-width:5.01953363;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+      <path
+         id="path8400-3"
+         d="m 168.77267,512.00785 0,35.43308 30.68594,17.71653 0,-35.43307 -30.68594,-17.71654"
+         style="fill:#b3b0f8;fill-opacity:1;stroke:#2e3436;stroke-width:5.01953363;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+    </g>
+    <path
+       inkscape:export-ydpi="279.39996"
+       inkscape:export-xdpi="279.39996"
+       inkscape:export-filename="C:\Documents and Settings\Scio\Desktop\path8267.png"
+       id="path8528"
+       d="m 116.62354,445.43486 0,35.43307 30.68594,17.71654 0,-35.43307 -30.68594,-17.71654"
+       style="opacity:0.3125;fill:url(#radialGradient8530);fill-opacity:1;stroke:none"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+</svg>
