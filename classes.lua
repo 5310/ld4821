@@ -99,7 +99,7 @@ function Tile:_create(axis, scroll, iso)
 	
 	self.scroll = scroll
 	
-	self.flags = {alpha=true, scale=true}
+	self.flags = {alpha=true, scale=false}
 	
 	self.distance = 0
 	self.alpha = 100
