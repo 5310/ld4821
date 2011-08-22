@@ -2,7 +2,7 @@
 --classes--
 -----------
 
-TILESIZE = 100    
+TILESIZE = 50    
     
 --level--
 
@@ -34,11 +34,11 @@ function Level:parse()
 					self.debug = axisno .. " " .. sliceno .. " " .. rowno .. " " .. colno .. " " .. value
 					if value == 1 then
 						if axisno == 1 then
-							self:insertData(Tile.create('x', self.origin, {x=sliceno, y=rowno, z=colno}))
+							self:insertData(Solid.create('x', self.origin, {x=sliceno, y=rowno, z=colno}))
 						elseif axisno == 2 then
-							self:insertData(Tile.create('y', self.origin, {x=rowno, y=sliceno, z=colno}))
+							self:insertData(Solid.create('y', self.origin, {x=rowno, y=sliceno, z=colno}))
 						elseif axisno == 3 then
-							self:insertData(Tile.create('z', self.origin, {x=rowno, y=colno, z=sliceno}))
+							self:insertData(Solid.create('z', self.origin, {x=rowno, y=colno, z=sliceno}))
 						end
 					end
 				end
@@ -83,10 +83,9 @@ end
 
 --------------------------------------------------------------------------------
 
---Tile--
+--Tile--																-- base pseudo class for almost all objects
 
 Tile = {}
-Tile.__index = Tile
 Tile.scale = {}
 Tile.scale.iso = TILESIZE
 Tile.scale.abs = {
@@ -94,31 +93,36 @@ Tile.scale.abs = {
 				 y = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
 				 z = {width = Tile.scale.iso*math.sin(math.pi/3)*2, height = Tile.scale.iso}
 				 }
-function Tile.setScale(s)
-	Tile.scale.iso = s
-	Tile.scale.abs = {
-				 x = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
-				 y = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
-				 z = {width = Tile.scale.iso*math.sin(math.pi/3)*2, height = Tile.scale.iso}
-				 }
-end
-function Tile.create(axis, scroll, iso)
-	local self = {}
-	setmetatable(self, Tile)
-	
+				 
+function Tile:_create(axis, scroll, iso)
 	self.axis = axis
 	
 	self.scroll = scroll
 	
+	self.flags = {alpha=false, scale=false}
+	
+	self.distance = 0
 	self.alpha = 100
-	self.scale = 1													-- TODO scaling tiles, will need to do custom offsets again
+	self.scale = 1														-- TODO scaling tiles, will need to do custom offsets again
 	
 	self.iso = iso
 	
 	self:calculateOffset()
-	self:calculateDepth()
+	self:calculateDepth()          
+end
+
+function Tile:calculateDistance(player)
+	x = player.iso.x
+	y = player.iso.y
+	z = player.iso.z
 	
-	return self            
+	if player.g.x > 0 then x = x+1 end
+	if player.g.y > 0 then y = y+1 end
+	if player.g.z > 0 then z = z+1 end		
+	
+	self.distance = math.sqrt((self.iso.x-x)*(self.iso.x-x) + 
+							  (self.iso.y-y)*(self.iso.y-y) + 
+							  (self.iso.z-z)*(self.iso.z-z))
 end
 
 function Tile:calculateDepth()
@@ -129,18 +133,71 @@ end
 function Tile:calculateOffset()
 	self.off = {}
 	if self.axis == 'x' then
-		self.off.x = Tile.scale.abs.x.width * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = Tile.scale.abs.x.height/3 * ((self.iso.x-1) + (self.iso.y-1)) - Tile.scale.abs.x.height*2/3 * (self.iso.z-1)
+		self.off.x = Tile.scale.abs.x.width * ((self.iso.x-1) - (self.iso.y-1)) - Tile.scale.abs.x.width*(1-self.scale)/2
+		self.off.y = Tile.scale.abs.x.height/3 * ((self.iso.x-1) + (self.iso.y-1)) - Tile.scale.abs.x.height*2/3 * (self.iso.z-1) - Tile.scale.abs.x.height*(1-self.scale)/2
 	elseif self.axis == 'y' then
-		self.off.x = (Tile.scale.abs.z.width)/2 * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) )
+		self.off.x = (Tile.scale.abs.z.width)/2 * ((self.iso.x-1) - (self.iso.y-1)) + Tile.scale.abs.x.width*(1-self.scale)/2
+		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) ) - Tile.scale.abs.x.height*(1-self.scale)/2
 	elseif self.axis == 'z' then
 		self.off.x = (Tile.scale.abs.z.width)/2 * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) )
+		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) ) + Tile.scale.abs.z.height*(1-self.scale)/2
 	end
 end
 
-function Tile:draw()
+function Tile:panScroll(scroll)
+	self.scroll = scroll
+end
+
+function Tile:setAlpha(player)		
+	visibility = 3
+	if self.distance <= visibility then
+		self.alpha = 100
+	else
+		self.alpha = 100 - (self.distance-visibility)*50
+	end
+	
+	if self.alpha < 0 then self.alpha = 0 end
+end
+
+function Tile:setScale()
+	if self.distance > 0 then self.scale = 1/(math.sqrt(self.distance)) end
+end
+
+function Tile:update(dt, scroll, player)
+	self:calculateDistance(player)
+	if self.flags.alpha then self:setAlpha() end
+	if self.flags.scale then self:setScale() end
+	self:calculateOffset()                                            	-- NOTE don't turn it on unless planning to more tiles around
+	self:panScroll(scroll)
+end
+
+
+
+--------------------------------------------------------------------------------
+
+-- Solid --
+
+
+Solid = {}
+Solid.__index = Solid
+function Solid.create(axis, scroll, iso)								-- pseudo-class inheritance
+	local self = {}
+	setmetatable(self, Solid)
+	
+	Tile._create(self, axis, scroll, iso)
+	
+	return self            
+end
+
+function Solid:calculateDepth()											-- pseudo-inherited
+	Tile.calculateDepth(self)
+end
+
+function Solid:calculateOffset()										-- pseudo-inherited
+	Tile.calculateOffset(self)
+end
+
+function Solid:draw()													
 	self:calculateDepth()
 	if self.axis == 'x' then
 		love.graphics.setColor( 58, 58, 58, self.alpha)
@@ -172,30 +229,25 @@ function Tile:draw()
 	end
 end
 
-function Tile:update(dt, scroll, player)
-	self:calculateOffset()                                                	-- NOTE don't turn it on unless planning to more tiles around
-	self:panScroll(scroll)
-	self:setAlpha(player)
+function Solid:update(dt, scroll, player)								-- pseudo-inherited
+	Tile.update(self, dt, scroll, player)
+	self.scale = math.abs(math.sin(self.distance + love.timer.getTime()))*0.99
 end
 
-function Tile:panScroll(scroll)
-	self.scroll = scroll
+function Solid:panScroll(scroll)										-- pseudo-inherited
+	Tile.panScroll(self, scroll)
 end
 
-function Tile:setAlpha(player)
-	distance = math.sqrt((self.iso.x-player.iso.x)*(self.iso.x-player.iso.x) + 
-						 (self.iso.y-player.iso.y)*(self.iso.y-player.iso.y) + 
-						 (self.iso.z-player.iso.z)*(self.iso.z-player.iso.z))
-	visibility = 3
-	if distance <= visibility then
-		self.alpha = 100
-	else
-		self.alpha = 100 - (distance-visibility)*50
-	end
-	
-	if self.alpha < 0 then self.alpha = 0 end
-	
-	
+function Solid:calculateDistance(player)								-- pseudo-inherited
+	Tile.calculateDistance(self, player)
+end
+
+function Solid:setAlpha(player)											-- pseudo-inherited
+	Tile.setAlpha(self, player)	
+end
+
+function Solid:setScale(player)											-- pseudo-inherited
+	Tile.setScale(self, player)
 end
 
 
@@ -204,7 +256,7 @@ end
 
 --Player--
 
-Player = {}
+Player = {}																-- pseudo pseudo-class inheritance of Solid
 Player.__index = Player
 function Player.create(g, scroll, iso, f)
 	local self = {}
@@ -214,6 +266,7 @@ function Player.create(g, scroll, iso, f)
 	self:setAxis()                                                        
 		 
 	self.scroll = scroll
+	self.scale = 1
 	
 	self.iso = iso
 	
@@ -226,29 +279,21 @@ function Player.create(g, scroll, iso, f)
 	
 	self.keys = {}
 	
+	
+	
 	return self     
 end
 
-function Player:calculateDepth()
+function Player:calculateDepth()										-- custom
 	--self:calculateOffset()
 	self.depth = (self.off.y / (Tile.scale.iso/2))+0.5 + self.iso.z*100       	-- constant should at least be the maximum level dimension
 end
 
-function Player:calculateOffset()
-	self.off = {}
-	if self.axis == 'x' then
-		self.off.x = Tile.scale.abs.x.width * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = Tile.scale.abs.x.height/3 * ((self.iso.x-1) + (self.iso.y-1)) - Tile.scale.abs.x.height*2/3 * (self.iso.z-1)
-	elseif self.axis == 'y' then
-		self.off.x = (Tile.scale.abs.z.width)/2 * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) )
-	elseif self.axis == 'z' then
-		self.off.x = (Tile.scale.abs.z.width)/2 * ((self.iso.x-1) - (self.iso.y-1))
-		self.off.y = (Tile.scale.abs.z.height)* ( ((self.iso.x-1) + (self.iso.y-1))/2 - (self.iso.z-1) )
-	end
+function Player:calculateOffset()										-- pseudo-inherited
+	Tile.calculateOffset(self)
 end
 
-function Player:draw()
+function Player:draw()													-- custom
 	self:calculateDepth()
 																				-- TODO facing and gravity
 																				
@@ -347,7 +392,7 @@ function Player:setAxis()
 	end
 end
 
-function Player:update(dt, scroll)
+function Player:update(dt, scroll)										-- custom
 	
 	if self.state == 0 then
 	
@@ -426,7 +471,7 @@ function Player:move(dt)
 	end
 end
 
-function Player:turn(dt)
+function Player:turn(dt)												
 	if love.keyboard.isDown('q') then                                       	--turn left
 			if math.abs(self.g.x) > 0 then
 				t = self.f.z
@@ -462,8 +507,8 @@ function Player:turn(dt)
 	end
 end
 
-function Player:panScroll(scroll)
-	self.scroll = scroll
+function Player:panScroll(scroll)										-- pseudo-inherited
+	Tile.panScroll(self, scroll)
 end
 
 									--------
