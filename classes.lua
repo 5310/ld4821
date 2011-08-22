@@ -2,72 +2,55 @@
 --classes--
 -----------
 
-    
+TILESIZE = 100    
     
 --level--
 
 Level = {}
 Level.__index = Level                                                       	-- setting pseudo-class index
-function Level.create()
+function Level.create(leveldata)
 	local self = {}                                                         	-- creating pseudo-instance object 
 	setmetatable(self, Level)                                               	-- sets metatable for pseudo-instance behavior
 	--begin initialize stuff
+	self.debug = ""
+		
 	self.origin = {x=width/2, y=height/2}
 	self.scroll = {x=0, y=0}
-	self.data = {                                                           
-				x = {
-					{
-					{1, 1},
-					{1, 1},
-					},
-					{
-					{1, 0},
-					{0, 0},
-					},
-					{
-					{0, 0},
-					{0, 0},
-					}                        
-				},
-				y = {
-					{
-					{1, 1},
-					{1, 1},
-					},
-					{
-					{1, 0},
-					{0, 0},
-					},
-					{
-					{0, 0},
-					{0, 0},
-					}                        
-				},
-				z = {
-					{
-					{1, 1},
-					{1, 1},
-					},
-					{
-					{1, 0},
-					{0, 0},
-					},
-					{
-					{0, 0},
-					{0, 0},
-					}                        
-				}
-				}
+
+	self.data = leveldata
 	self.sortedData = {}
+	
+	self:parse()
 
 	--finish initializing stuff
 	return self                                                             	-- returns pseudo-instance object
 end
 
+function Level:parse()
+	for axisno, axis in pairs(self.data) do
+		for sliceno, slice in pairs(axis) do 
+			for rowno, row in pairs(slice) do
+				for colno, value in pairs(row) do
+					self.debug = axisno .. " " .. sliceno .. " " .. rowno .. " " .. colno .. " " .. value
+					if value == 1 then
+						if axisno == 1 then
+							self:insertData(Tile.create('x', self.origin, {x=sliceno, y=rowno, z=colno}))
+						elseif axisno == 2 then
+							self:insertData(Tile.create('y', self.origin, {x=rowno, y=sliceno, z=colno}))
+						elseif axisno == 3 then
+							self:insertData(Tile.create('z', self.origin, {x=rowno, y=colno, z=sliceno}))
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
 function Level:draw()
 	for key, object in pairs(self.sortedData) do 
 		object:draw()
-		love.graphics.print( object.depth , 10, key*10)                     	-- DEBUG
+		--love.graphics.print( object.depth , 10, key*10)                     	-- DEBUG
 	end
 end
 
@@ -105,12 +88,20 @@ end
 Tile = {}
 Tile.__index = Tile
 Tile.scale = {}
-Tile.scale.iso = 100
+Tile.scale.iso = TILESIZE
 Tile.scale.abs = {
 				 x = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
 				 y = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
 				 z = {width = Tile.scale.iso*math.sin(math.pi/3)*2, height = Tile.scale.iso}
 				 }
+function Tile.setScale(s)
+	Tile.scale.iso = s
+	Tile.scale.abs = {
+				 x = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
+				 y = {width = Tile.scale.iso*math.sin(math.pi/3), height = Tile.scale.iso*1.5},
+				 z = {width = Tile.scale.iso*math.sin(math.pi/3)*2, height = Tile.scale.iso}
+				 }
+end
 function Tile.create(axis, scroll, iso)
 	local self = {}
 	setmetatable(self, Tile)
@@ -120,6 +111,7 @@ function Tile.create(axis, scroll, iso)
 	self.scroll = scroll
 	
 	self.alpha = 100
+	self.scale = 1													-- TODO scaling tiles, will need to do custom offsets again
 	
 	self.iso = iso
 	
@@ -150,39 +142,38 @@ end
 
 function Tile:draw()
 	self:calculateDepth()
-	
 	if self.axis == 'x' then
 		love.graphics.setColor( 58, 58, 58, self.alpha)
 		love.graphics.quad(
 						  "fill", 
-						  self.scroll.x-Tile.scale.abs.x.width + self.off.x, self.scroll.y-Tile.scale.abs.x.height/3 + self.off.y, 
-						  self.scroll.x + self.off.x, self.scroll.y-Tile.scale.abs.x.height*2/3 + self.off.y,
+						  self.scroll.x-Tile.scale.abs.x.width*self.scale + self.off.x, self.scroll.y-Tile.scale.abs.x.height*self.scale/3 + self.off.y, 
+						  self.scroll.x + self.off.x, self.scroll.y-Tile.scale.abs.x.height*self.scale*2/3 + self.off.y,
 						  self.scroll.x + self.off.x, self.scroll.y + self.off.y,
-						  self.scroll.x-Tile.scale.abs.x.width + self.off.x, self.scroll.y+Tile.scale.abs.x.height/3 + self.off.y
+						  self.scroll.x-Tile.scale.abs.x.width*self.scale + self.off.x, self.scroll.y+Tile.scale.abs.x.height*self.scale/3 + self.off.y
 						  )
 	elseif self.axis == 'y' then                                            	-- TODO does not draw y-facing tile, yet
 		love.graphics.setColor( 20, 20, 20, self.alpha)
 		love.graphics.quad(
 						  "fill", 
-						  self.scroll.x + self.off.x, self.scroll.y-Tile.scale.abs.y.height*2/3 + self.off.y,
-						  self.scroll.x+Tile.scale.abs.y.width + self.off.x, self.scroll.y-Tile.scale.abs.y.height/3 + self.off.y, 
-						  self.scroll.x+Tile.scale.abs.y.width + self.off.x, self.scroll.y+Tile.scale.abs.y.height/3 + self.off.y,
+						  self.scroll.x + self.off.x, self.scroll.y-Tile.scale.abs.y.height*self.scale*2/3 + self.off.y,
+						  self.scroll.x+Tile.scale.abs.y.width*self.scale + self.off.x, self.scroll.y-Tile.scale.abs.y.height*self.scale/3 + self.off.y, 
+						  self.scroll.x+Tile.scale.abs.y.width*self.scale + self.off.x, self.scroll.y+Tile.scale.abs.y.height*self.scale/3 + self.off.y,
 						  self.scroll.x + self.off.x, self.scroll.y + self.off.y
 						  )
 	elseif self.axis == 'z' then
 		love.graphics.setColor( 105, 105, 105, self.alpha)
 		love.graphics.quad(
 						  "fill", 
-						  self.scroll.x-Tile.scale.abs.z.width/2 + self.off.x, self.scroll.y+Tile.scale.abs.z.height/2 + self.off.y, 
+						  self.scroll.x-Tile.scale.abs.z.width*self.scale/2 + self.off.x, self.scroll.y+Tile.scale.abs.z.height*self.scale/2 + self.off.y, 
 						  self.scroll.x + self.off.x, self.scroll.y + self.off.y,
-						  self.scroll.x+Tile.scale.abs.z.width/2 + self.off.x, self.scroll.y+Tile.scale.abs.z.height/2 + self.off.y,
-						  self.scroll.x + self.off.x, self.scroll.y+Tile.scale.abs.z.height + self.off.y
+						  self.scroll.x+Tile.scale.abs.z.width*self.scale/2 + self.off.x, self.scroll.y+Tile.scale.abs.z.height*self.scale/2 + self.off.y,
+						  self.scroll.x + self.off.x, self.scroll.y+Tile.scale.abs.z.height*self.scale + self.off.y
 						  )
 	end
 end
 
 function Tile:update(dt, scroll, player)
-	--self:calculateOffset()                                                	-- NOTE don't turn it on unless planning to more tiles around
+	self:calculateOffset()                                                	-- NOTE don't turn it on unless planning to more tiles around
 	self:panScroll(scroll)
 	self:setAlpha(player)
 end
@@ -195,10 +186,11 @@ function Tile:setAlpha(player)
 	distance = math.sqrt((self.iso.x-player.iso.x)*(self.iso.x-player.iso.x) + 
 						 (self.iso.y-player.iso.y)*(self.iso.y-player.iso.y) + 
 						 (self.iso.z-player.iso.z)*(self.iso.z-player.iso.z))
-	if distance <= 2 then
+	visibility = 3
+	if distance <= visibility then
 		self.alpha = 100
 	else
-		self.alpha = 100 - (distance-2)*50
+		self.alpha = 100 - (distance-visibility)*50
 	end
 	
 	if self.alpha < 0 then self.alpha = 0 end
@@ -259,29 +251,31 @@ end
 function Player:draw()
 	self:calculateDepth()
 																				-- TODO facing and gravity
+																				
+	tweak = Tile.scale.iso/100
 	if self.axis == 'x' then
 	
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.y < 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.z < 0 then
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
 		end
 		
 		love.graphics.setColor( 255, 255, 255, 255)
 		if self.g.x < 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.4+4, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.4+4*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y, Tile.scale.iso*0.2, 6)
 		elseif self.g.x > 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.4-4, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.4-4*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y, Tile.scale.iso*0.2, 6)
 		end
 		
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.y > 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.z > 0 then
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
 		end
@@ -290,25 +284,25 @@ function Player:draw()
 	
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.x < 0 then    
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.z < 0 then
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
 		end
 		
 		love.graphics.setColor( 255, 255, 255, 255)
 		if self.g.y < 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.4-4.5, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.4-4.5*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y, Tile.scale.iso*0.2, 6)
 		elseif self.g.y > 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.4+4.5, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.4+4.5*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y, Tile.scale.iso*0.2, 6)
 		end
 		
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.x > 0 then    
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.z > 0 then
 			love.graphics.circle("fill", self.scroll.x+self.off.x, self.scroll.y+self.off.y-Tile.scale.iso*0.2, Tile.scale.iso*0.2, 6)
 		end
@@ -317,9 +311,9 @@ function Player:draw()
 	
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.x < 0 then    
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.y < 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2.5*tweak, self.scroll.y+self.off.y-Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		end
 	
 		love.graphics.setColor( 255, 255, 255, 255)
@@ -335,9 +329,9 @@ function Player:draw()
 		
 		love.graphics.setColor( 10, 10, 10, 255)
 		if self.f.x > 0 then    
-			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x+Tile.scale.iso*0.2-2*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		elseif self.f.y > 0 then
-			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
+			love.graphics.circle("fill", self.scroll.x+self.off.x-Tile.scale.iso*0.2+2.5*tweak, self.scroll.y+self.off.y+Tile.scale.iso*0.1, Tile.scale.iso*0.2, 6)
 		end
 		
 	end
@@ -382,31 +376,27 @@ function Player:update(dt, scroll)
 	
 end
 
---function Player:listen(key)                                               	-- separating events, didn't work out
-	--self.keys['key'] = 0
---end
-
---function Player:signal()
-	--for key, value in pairs(self.keys) do
-		--value = love.keyboard.isDown(key)
-	--end
---end
-
 function Player:move(dt)
 	
 	if love.keyboard.isDown('w') then                                       	-- forward
+		--check for door
+		--check for floor
 		self.iso.x = self.iso.x+self.f.x
 		self.iso.y = self.iso.y+self.f.y
 		self.iso.z = self.iso.z+self.f.z
 		self.state = 1
 		
 	elseif love.keyboard.isDown('s') then                                   	--backward
+	--check for door
+		--check for floor
 		self.iso.x = self.iso.x-self.f.x
 		self.iso.y = self.iso.y-self.f.y
 		self.iso.z = self.iso.z-self.f.z
 		self.state = 1
 		
 	elseif love.keyboard.isDown('a') then                                   	--strafe left
+		--check for door
+		--check for floor
 		if math.abs(self.g.x) > 0 then
 			self.iso.y = self.iso.y-self.f.z*self.g.x
 			self.iso.z = self.iso.z+self.f.y*self.g.x
@@ -420,6 +410,8 @@ function Player:move(dt)
 		self.state = 1
 		
 	elseif love.keyboard.isDown('d') then                                   	--strafe right
+		--check for door
+		--check for floor
 		if math.abs(self.g.x) > 0 then
 			self.iso.y = self.iso.y+self.f.z*self.g.x
 			self.iso.z = self.iso.z-self.f.y*self.g.x
