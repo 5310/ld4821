@@ -21,7 +21,7 @@ function love.load()
     --objects--
     -----------
     
-    level = Level.create(leveldataflat)                                   -- initialize level
+    level = Level.create(leveldata02)                                   -- initialize level
     
     player = Player.create({x=0, y=0, z=-1},
                       {x=width/2, y=height/2},

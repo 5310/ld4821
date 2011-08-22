@@ -99,7 +99,7 @@ function Tile:_create(axis, scroll, iso)
 	
 	self.scroll = scroll
 	
-	self.flags = {alpha=false, scale=false}
+	self.flags = {alpha=true, scale=true}
 	
 	self.distance = 0
 	self.alpha = 100
@@ -231,7 +231,8 @@ end
 
 function Solid:update(dt, scroll, player)								-- pseudo-inherited
 	Tile.update(self, dt, scroll, player)
-	self.scale = math.abs(math.sin(self.distance + love.timer.getTime()))*0.99
+	--self.scale = math.abs(math.sin(self.distance + love.timer.getTime()))*0.99
+																		-- DEBUG
 end
 
 function Solid:panScroll(scroll)										-- pseudo-inherited
