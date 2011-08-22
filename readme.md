@@ -203,51 +203,52 @@ Map					--simply a container
 TODO
 ====
 
-TODO 	level
-	TODO	scrolling
+DONE 	level
+	DONE	scrolling
 	DONE	depth sorting and queue
-	TODO	level parsing
-		TODO	function to add tiles that will put them in relevant Level.data array AND insert into Level.dataSorted
-		TODO	level format in lua
-		TODO	loop to convert level file into level object		
+	DONE	level parsing
+		DONE	function to add tiles that will put them in relevant Level.data array AND insert into Level.dataSorted
+		DONE	level format in lua
+		DONE	loop to convert level file into level object		
 				
 DONE	tile
 	DONE	base class
 	DONE 	base drawing
-	
-TODO	door
-	TODO 	base class
-	TODO	base drawing
-	TODO	logic
+	DONE 	per-tile scaling and fading
+	TODO	door drawing
 	
 TODO	player
 	DONE	base class
 	DONE	base drawing
 	DONE	basic player controls
-	TODO 	logic and hookable controls
-	TODO	error checking on g and f initialization
-	
-TODO 	source control
-	TODO	commit!
-	TODO	split files
+	DONE 	logic to see if target move-location is valid
+	TODO	logic to check collision
+	TODO	logic to teleport per orientation
 	
 TODO 	release alpha
 	DONE	implement scrolling
 	DONE	add fadeout of tiles if distant from player
 	TODO 	complete the above
 	TODO	map a few levels
+	TODO	special abilities to help see around
+	
+TODO	code maintenance
+	TODO	refactor solids back into a single Tile type, since behavior is better done using an integer, player-side
+	TODO	error checking on g and f initialization
 	
 TODO release beta
 	TODO	menu
 	TODO	obstacles? switches? points?
 	TODO 	more levels
 	TODO 	sound effects
-	TODO	animation
+	TODO	movement tween animation, consider having the black-head slow-in, and the body slow-out
+	TODO	rotation animation by moving the black-head around (mind the z-sort)
+	TODO	teleportation per smallifying and moving onto the door and vice-versa
 	
 TODO release gamma
-	TODO 	add shading to player and obstacles and such
+	TODO 	add shading to player and obstacles and such, consider a gradient circular white shadow
 	TODO	add glow/shadow under player 
-	TODO	block effect on doors
+	TODO	block effect on doors: try whitening the block upon contact
 	TODO	fullscreenize
 	TODO	package
 	

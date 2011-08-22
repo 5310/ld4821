@@ -18,9 +18,11 @@ function Level.create(leveldata)
 	self.scroll = {x=0, y=0}
 
 	self.data = leveldata
+	--self.data2 = leveldata
 	self.sortedData = {}
-	
 	self:parse()
+	
+	self.size = {x = #self.data[1][1], y = #self.data[2][1], z = #self.data[3][1]}
 
 	--finish initializing stuff
 	return self                                                             	-- returns pseudo-instance object
@@ -79,6 +81,23 @@ function Level:panScroll(dt)
 	self.scroll.y = self.scroll.y - (self.player.off.y+self.scroll.y)/(dt*5000)
 end
 
+function Level:getObject(axis, x, y, z)
+	if x <= self.size.x and x > 0 and 
+	   y <= self.size.y and y > 0 and 
+	   z <= self.size.z and z > 0 then
+		if axis == 1 then
+			return self.data[axis][x][y][z]
+		elseif axis == 2 then
+			return self.data[axis][y][x][z]
+		elseif axis == 3 then
+			return self.data[axis][z][x][y]
+		else
+			return 0
+		end
+	else
+		return 0
+	end
+end
 
 
 --------------------------------------------------------------------------------
@@ -104,6 +123,8 @@ function Tile:_create(axis, scroll, iso)
 	self.distance = 0
 	self.alpha = 100
 	self.scale = 1														-- TODO scaling tiles, will need to do custom offsets again
+	
+	self.solid = true
 	
 	self.iso = iso
 	
@@ -278,9 +299,9 @@ function Player.create(g, scroll, iso, f)
 	
 	self.state = 0
 	
-	self.keys = {}
+	--self.keys = {}
 	
-	
+	self.debug= ""
 	
 	return self     
 end
@@ -423,50 +444,142 @@ function Player:update(dt, scroll)										-- custom
 end
 
 function Player:move(dt)
+	l = level																	-- BUG HACK impossible to pass the level object to player
+	t = 1
 	
 	if love.keyboard.isDown('w') then                                       	-- forward
 		--check for door
-		--check for floor
-		self.iso.x = self.iso.x+self.f.x
-		self.iso.y = self.iso.y+self.f.y
-		self.iso.z = self.iso.z+self.f.z
+		
+		x = self.iso.x+self.f.x
+		y = self.iso.y+self.f.y
+		z = self.iso.z+self.f.z
+
+		if self.g.x < 0 then
+			t = l:getObject(1, x, y, z)
+		elseif self.g.x > 0 then
+			t = l:getObject(1, x, y, z)
+		elseif  self.g.y < 0 then 
+			t = l:getObject(2, x, y, z)
+		elseif  self.g.y > 0 then 
+			t = l:getObject(2, x, y+1, z)
+		elseif self.g.z < 0 then 
+			t = l:getObject(3, x, y, z)
+		elseif self.g.z > 0 then 
+			t = l:getObject(3, x, y, z+1)
+		end
+		
+		if t > 0 then
+			self.iso.x = x
+			self.iso.y = y
+			self.iso.z = z
+		end
+		
 		self.state = 1
 		
 	elseif love.keyboard.isDown('s') then                                   	--backward
-	--check for door
-		--check for floor
-		self.iso.x = self.iso.x-self.f.x
-		self.iso.y = self.iso.y-self.f.y
-		self.iso.z = self.iso.z-self.f.z
+		--check for door
+		
+		x = self.iso.x-self.f.x
+		y = self.iso.y-self.f.y
+		z = self.iso.z-self.f.z
+
+		if self.g.x < 0 then
+			t = l:getObject(1, x, y, z)
+		elseif self.g.x > 0 then
+			t = l:getObject(1, x, y, z)
+		elseif  self.g.y < 0 then 
+			t = l:getObject(2, x, y, z)
+		elseif  self.g.y > 0 then 
+			t = l:getObject(2, x, y+1, z)
+		elseif self.g.z < 0 then 
+			t = l:getObject(3, x, y, z)
+		elseif self.g.z > 0 then 
+			t = l:getObject(3, x, y, z+1)
+		end
+		
+		if t > 0 then
+			self.iso.x = x
+			self.iso.y = y
+			self.iso.z = z
+		end
+		
 		self.state = 1
 		
 	elseif love.keyboard.isDown('a') then                                   	--strafe left
 		--check for door
-		--check for floor
+		
+		x = self.iso.x
+		y = self.iso.y
+		z = self.iso.z
+		
 		if math.abs(self.g.x) > 0 then
-			self.iso.y = self.iso.y-self.f.z*self.g.x
-			self.iso.z = self.iso.z+self.f.y*self.g.x
+			y = self.iso.y-self.f.z*self.g.x
+			z = self.iso.z+self.f.y*self.g.x
+			if self.g.x < 0 then
+				t = l:getObject(1, x, y, z)
+			elseif self.g.x > 0 then
+				t = l:getObject(1, x+1, y, z)
+			end
 		elseif math.abs(self.g.y) > 0 then
-			self.iso.x = self.iso.x+self.f.z*self.g.y
-			self.iso.z = self.iso.z-self.f.x*self.g.y
+			x = self.iso.x+self.f.z*self.g.y
+			z = self.iso.z-self.f.x*self.g.y
+			if self.g.y < 0 then
+				t = l:getObject(2, x, y, z)
+			elseif self.g.y > 0 then
+				t = l:getObject(2, x, y+1, z)
+			end
 		elseif math.abs(self.g.z) > 0 then
-			self.iso.y = self.iso.y+self.f.x*self.g.z
-			self.iso.x = self.iso.x-self.f.y*self.g.z
+			y = self.iso.y+self.f.x*self.g.z
+			x = self.iso.x-self.f.y*self.g.z
+			if self.g.z < 0 then
+				t = l:getObject(3, x, y, z)
+			elseif self.g.z > 0 then
+				t = l:getObject(3, x, y, z+1)
+			end
+		end
+		if t > 0 then
+			self.iso.x = x
+			self.iso.y = y
+			self.iso.z = z
 		end
 		self.state = 1
 		
 	elseif love.keyboard.isDown('d') then                                   	--strafe right
 		--check for door
-		--check for floor
+		
+		x = self.iso.x
+		y = self.iso.y
+		z = self.iso.z
+		
 		if math.abs(self.g.x) > 0 then
-			self.iso.y = self.iso.y+self.f.z*self.g.x
-			self.iso.z = self.iso.z-self.f.y*self.g.x
+			y = self.iso.y+self.f.z*self.g.x
+			z = self.iso.z-self.f.y*self.g.x
+			if self.g.x < 0 then
+				t = l:getObject(1, x, y, z)
+			elseif self.g.x > 0 then
+				t = l:getObject(1, x+1, y, z)
+			end
 		elseif math.abs(self.g.y) > 0 then
-			self.iso.x = self.iso.x-self.f.z*self.g.y
-			self.iso.z = self.iso.z+self.f.x*self.g.y
+			x = self.iso.x-self.f.z*self.g.y
+			z = self.iso.z+self.f.x*self.g.y
+			if self.g.y < 0 then
+				t = l:getObject(2, x, y, z)
+			elseif self.g.y > 0 then
+				t = l:getObject(2, x, y+1, z)
+			end
 		elseif math.abs(self.g.z) > 0 then
-			self.iso.y = self.iso.y-self.f.x*self.g.z
-			self.iso.x = self.iso.x+self.f.y*self.g.z
+			y = self.iso.y-self.f.x*self.g.z
+			x = self.iso.x+self.f.y*self.g.z
+			if self.g.z < 0 then
+				t = l:getObject(3, x, y, z)
+			elseif self.g.z > 0 then
+				t = l:getObject(3, x, y, z+1)
+			end
+		end
+		if t > 0 then
+			self.iso.x = x
+			self.iso.y = y
+			self.iso.z = z
 		end
 		self.state = 1
 	end
@@ -508,7 +621,7 @@ function Player:turn(dt)
 	end
 end
 
-function Player:panScroll(scroll)										-- pseudo-inherited
+function Player:panScroll(scroll)												-- pseudo-inherited
 	Tile.panScroll(self, scroll)
 end
 

@@ -36,7 +36,7 @@ leveldata01 = 	{           											-- the entire level
 							{0, 0}
 						}                        
 					},
-					{													-- z-facing tiles	[z][y][x]
+					{													-- z-facing tiles	[z][x][y]
 						{
 							{1, 1},
 							{1, 1}

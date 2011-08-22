@@ -51,6 +51,7 @@ end
 
 function love.draw()
     love.graphics.print( love.timer.getFPS() , 10, height-20)                   -- DEBUG
-    love.graphics.print( level.debug , 10, height-40)                   -- DEBUG
+    --love.graphics.print( level.data[1][1][1][1] , 10, height-40)                   -- DEBUG
+    love.graphics.print( player.debug , 10, height-40)                   -- DEBUG
     level:draw()
 end
