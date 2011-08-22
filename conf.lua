@@ -1,7 +1,7 @@
 function love.conf(t)
     t.title = "LD48 #21 Entry by Scio"
     t.screen.vsync = true
-    t.screen.fsaa = 2
+    t.screen.fsaa = 4
     t.modules.joystick = false
     --t.modules.audio = true
     --t.modules.keyboard = true

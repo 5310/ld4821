@@ -76,19 +76,24 @@ function Level:sortTiles()
 end
 
 function Level:update(dt)
+	self:panScroll(dt)
 	self:sortTiles()
 	for key, object in pairs(self.sortedData) do
-		object:update(dt, {x=self.origin.x+self.scroll.x, y=self.origin.y+self.scroll.y})
+		object:update(dt, {x=self.origin.x+self.scroll.x, y=self.origin.y+self.scroll.y}, self.player)
 	end
 end
 
-function Level:insertData(tile)
+function Level:insertData(tile, flag)
+	if flag then
+		if flag=='player' then self.player = tile end
+	end
+			
 	table.insert(self.sortedData, tile)
 end
 
-function Level:panScroll(dt, off)
-	self.scroll.x = self.scroll.x - (off.x+self.scroll.x)/(dt*5000)
-	self.scroll.y = self.scroll.y - (off.y+self.scroll.y)/(dt*5000)
+function Level:panScroll(dt)
+	self.scroll.x = self.scroll.x - (self.player.off.x+self.scroll.x)/(dt*5000)
+	self.scroll.y = self.scroll.y - (self.player.off.y+self.scroll.y)/(dt*5000)
 end
 
 
@@ -113,6 +118,8 @@ function Tile.create(axis, scroll, iso)
 	self.axis = axis
 	
 	self.scroll = scroll
+	
+	self.alpha = 100
 	
 	self.iso = iso
 	
@@ -145,7 +152,7 @@ function Tile:draw()
 	self:calculateDepth()
 	
 	if self.axis == 'x' then
-		love.graphics.setColor( 58, 58, 58, 100)
+		love.graphics.setColor( 58, 58, 58, self.alpha)
 		love.graphics.quad(
 						  "fill", 
 						  self.scroll.x-Tile.scale.abs.x.width + self.off.x, self.scroll.y-Tile.scale.abs.x.height/3 + self.off.y, 
@@ -154,7 +161,7 @@ function Tile:draw()
 						  self.scroll.x-Tile.scale.abs.x.width + self.off.x, self.scroll.y+Tile.scale.abs.x.height/3 + self.off.y
 						  )
 	elseif self.axis == 'y' then                                            	-- TODO does not draw y-facing tile, yet
-		love.graphics.setColor( 20, 20, 20, 100)
+		love.graphics.setColor( 20, 20, 20, self.alpha)
 		love.graphics.quad(
 						  "fill", 
 						  self.scroll.x + self.off.x, self.scroll.y-Tile.scale.abs.y.height*2/3 + self.off.y,
@@ -163,7 +170,7 @@ function Tile:draw()
 						  self.scroll.x + self.off.x, self.scroll.y + self.off.y
 						  )
 	elseif self.axis == 'z' then
-		love.graphics.setColor( 105, 105, 105, 100)
+		love.graphics.setColor( 105, 105, 105, self.alpha)
 		love.graphics.quad(
 						  "fill", 
 						  self.scroll.x-Tile.scale.abs.z.width/2 + self.off.x, self.scroll.y+Tile.scale.abs.z.height/2 + self.off.y, 
@@ -174,13 +181,29 @@ function Tile:draw()
 	end
 end
 
-function Tile:update(dt, scroll)
+function Tile:update(dt, scroll, player)
 	--self:calculateOffset()                                                	-- NOTE don't turn it on unless planning to more tiles around
 	self:panScroll(scroll)
+	self:setAlpha(player)
 end
 
 function Tile:panScroll(scroll)
 	self.scroll = scroll
+end
+
+function Tile:setAlpha(player)
+	distance = math.sqrt((self.iso.x-player.iso.x)*(self.iso.x-player.iso.x) + 
+						 (self.iso.y-player.iso.y)*(self.iso.y-player.iso.y) + 
+						 (self.iso.z-player.iso.z)*(self.iso.z-player.iso.z))
+	if distance <= 2 then
+		self.alpha = 100
+	else
+		self.alpha = 100 - (distance-2)*50
+	end
+	
+	if self.alpha < 0 then self.alpha = 0 end
+	
+	
 end
 
 

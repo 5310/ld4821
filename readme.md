@@ -210,8 +210,6 @@ TODO 	level
 		TODO	function to add tiles that will put them in relevant Level.data array AND insert into Level.dataSorted
 		TODO	level format in lua
 		TODO	loop to convert level file into level object		
-		
-			
 				
 DONE	tile
 	DONE	base class
@@ -235,6 +233,7 @@ TODO 	source control
 	
 TODO 	release alpha
 	DONE	implement scrolling
+	DONE	add fadeout of tiles if distant from player
 	TODO 	complete the above
 	TODO	map a few levels
 	
@@ -246,7 +245,6 @@ TODO release beta
 	TODO	animation
 	
 TODO release gamma
-	TODO	add fadeout of tiles if distant from player
 	TODO 	add shading to player and obstacles and such
 	TODO	add glow/shadow under player 
 	TODO	block effect on doors

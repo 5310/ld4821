@@ -25,14 +25,32 @@ function love.load()
                       {x=width/2, y=height/2},
                       {x=1, y=1, z=1},
                       {x=1, y=0, z=0})                                          -- initializes player
-    level:insertData( player )
+    level:insertData( player , 'player')
                                                                                 
     level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=1, y=1, z=1}))-- DEBUG        
     level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=1, y=1, z=1}))-- DEBUG
     level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=1, y=1, z=1}))-- DEBUG
-    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=2, y=1, z=1}))-- DEBUG
-    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=1, y=2, z=1}))-- DEBUG
+    --level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=2, y=1, z=1}))-- DEBUG
+    --level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=1, y=2, z=1}))-- DEBUG
     level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=1, y=1, z=2}))-- DEBUG
+    
+    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=1, y=1, z=2}))
+    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=1, y=2, z=2}))
+    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=1, y=2, z=1}))
+    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=1, y=1, z=2}))
+    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=2, y=1, z=2}))
+    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=2, y=1, z=1}))
+    level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=2, y=2, z=1}))
+    level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=1, y=2, z=1}))
+    level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=2, y=1, z=1}))
+    
+    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=1, y=3, z=1}))
+    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=2, y=2, z=1}))
+    level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=1, y=2, z=2}))
+    level:insertData(Tile.create('x', {x=width/2, y=height/2}, {x=3, y=1, z=1}))
+    level:insertData(Tile.create('y', {x=width/2, y=height/2}, {x=2, y=2, z=1}))
+    level:insertData(Tile.create('z', {x=width/2, y=height/2}, {x=2, y=1, z=2}))
+
     
 
 end
@@ -45,7 +63,6 @@ end
 
 function love.update(dt)
     level:update(dt)
-    level:panScroll(dt, player.off)
 end
 
 
